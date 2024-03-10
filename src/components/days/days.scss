@@ -1,0 +1,48 @@
+.days {
+  display: flex;
+  width: 100%;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+
+  &__item {
+    padding-top: 20px;
+    padding-bottom: 15px;
+    border: 1px solid #969696;
+    flex: 1;
+    cursor: pointer;
+    scroll-snap-align: start;
+
+    h3 {
+      text-align: center;
+      font-weight: 700;
+      font-size: 0.875rem;
+      text-transform: capitalize;
+      margin-bottom: 2px;
+    }
+
+    .icon {
+      width: 48px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &__temp {
+      text-align: center;
+
+      &-max {
+        font-weight: 700;
+        font-size: 1.125rem;
+        margin-bottom: 2px;
+      }
+
+      &-min {
+        font-weight: 400;
+        font-size: 0.875rem;
+      }
+    }
+
+    &.active {
+      background: #f7f7f7;
+    }
+  }
+}
